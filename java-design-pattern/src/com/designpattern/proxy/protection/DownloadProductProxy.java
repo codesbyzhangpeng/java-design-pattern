@@ -4,7 +4,7 @@ public class DownloadProductProxy implements Downloadable{
 	
 	private  final int MAX_DL_NR = 3;
 	private int dlNumber;
-	private DownloadProduct downloadProduct;
+	private Downloadable downloadProduct;
 	
 	public DownloadProductProxy(String name) {
 		this.downloadProduct = new DownloadProduct(name);
@@ -18,7 +18,7 @@ public class DownloadProductProxy implements Downloadable{
 		}
 		else {
 			System.out.println(customer.getName() + " hat schon das Produkt "
-					+ this.downloadProduct.getProductName() + " schon drei mal heruntergeladen!");
+					+ /*this.downloadProduct.getProductName() +*/ " schon drei mal heruntergeladen!");
 		}
 	}
 	
