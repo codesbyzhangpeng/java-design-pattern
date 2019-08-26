@@ -5,12 +5,12 @@ import java.util.List;
 public class Main {
 	
 	public static void main(String[] args) {
-		CustomerList list1 = new CustomerListProxyImpl();
-		Company comp = new Company("MiddleWare Factory IT Limited", "TheodorStr. 34, Regensburg", list1);
+		CustomerList Customerlist1 = new CustomerListProxyImpl();
+		Company comp = new Company("MiddleWare Factory IT Limited", "TheodorStr. 34, Regensburg", Customerlist1);
 		
 		System.out.println("Company name: " + comp.getName());
 		
-		list1 = comp.getCustomerList();
+		CustomerList list1 = comp.getCustomerList();
 		
 		System.out.println("-------------------------------------------");
 		
@@ -21,6 +21,24 @@ public class Main {
 		for(Customer customer: cuslist) {
 			System.out.println(customer);
 		}
+		
+		System.out.println("-------------------------------------------");
+		
+		for(Customer customer: cuslist) {
+			System.out.println(customer);
+		}
+		
+		System.out.println("-------------------------------------------");
+
+		for(Customer customer: cuslist) {
+			System.out.println(customer);
+		}
+		
+		System.out.println("-------------------------------------------");
+
+
+		
+		list1.getCustomerList();
 	}
 
 }
