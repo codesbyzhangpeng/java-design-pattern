@@ -24,7 +24,7 @@ public class DepositCommand implements BankTransactionCommand {
 
 	@Override
 	public String toString() {
-		return "DepositCommand [bankAccount=" + bankAccount + ", amount=" + amount + "]";
+		return "DepositCommand Execute [bankAccount_balance= " + bankAccount.getBalance() + ", Deposit amount=" + amount + "]";
 	}
 	
 	

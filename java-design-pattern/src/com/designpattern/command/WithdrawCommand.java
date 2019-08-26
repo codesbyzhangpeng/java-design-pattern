@@ -30,7 +30,7 @@ public class WithdrawCommand implements BankTransactionCommand{
 
 	@Override
 	public String toString() {
-		return "WithdrawCommand [bankAccount=" + bankAccount + ", amount=" + amount + ", transactionSucceeded="
+		return "WithdrawCommand [bankAccount_balance=" + bankAccount.getBalance() + ", Withdraw amount=" + amount + ", transactionSucceeded="
 				+ transactionSucceeded + "]";
 	}
 	

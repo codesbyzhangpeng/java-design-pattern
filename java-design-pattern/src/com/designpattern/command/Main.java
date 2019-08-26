@@ -17,17 +17,22 @@ public class Main {
 		BankTransactionCommand command3 = new DepositCommand(user1, 1000);
 
 		cashMachine1.executeBankTransaction(command1);
+		
 		cashMachine1.executeBankTransaction(command2);
 		cashMachine1.executeBankTransaction(command3);
 		cashMachine1.undoBankTransaction(command3);
 		
-//		cashMachine1.undoBankTransaction(command2);
-		cashMachine1.undoBankTransaction(command1);
+
+		
+		cashMachine1.undoBankTransaction(command2);
 		
 		List<BankTransactionCommand> list = new ArrayList<>();
-		
 		list = cashMachine1.getCommandsList();
 		
+		cashMachine1.undoBankTransaction(command1);
+		
+
+
 		list.forEach(commandlist->System.out.println(commandlist));
 
 				
