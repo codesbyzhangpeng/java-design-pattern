@@ -20,6 +20,4 @@ public class Navigation {
 		System.out.println("The route will be calculated...");
 		chosenStrategy.calculateRoute(possibleRoute);
 	}
-	
-	
 }
